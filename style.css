@@ -1,0 +1,32 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(255 20% 40% / .5);
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.btn {
+    height: 3.2rem;
+    aspect-ratio: 3.5 / 1;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: .1rem solid hsl(1 67% 52% / 0.7);
+    background-color: hsl(0 43% 95%);
+    box-shadow: 0 0 0 hsl(1 67% 52% / 0.7) inset;
+    transition: all .5s;
+}
+
+.btn:hover {
+    box-shadow: 11.2rem 0 3.2rem hsl(1 67% 52% / 0.7) inset;
+    color: hsl(0 43% 95%);
+}
